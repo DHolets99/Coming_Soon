@@ -1,0 +1,71 @@
+/*COLORS*/
+
+$white: #FAFAFA;
+$blue: #5175FF;
+$dark_gray: #333950;
+$gray: #747B95;
+$light_blue: #829CFF;
+$black: #25293A;
+$red: #F05B5B;
+
+/*TYPOGRAPHY*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+@mixin h1 {
+    font-family: Kumbh Sans;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+@mixin h2 {
+    font-family: Kumbh Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+@mixin h3 {
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+@mixin body1 {
+    font-family: Kumbh Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+@mixin body2 {
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+:root {
+    background-color: $white;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 20px;
+}

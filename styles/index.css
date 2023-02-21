@@ -1,0 +1,14 @@
+/*COLORS*/
+/*TYPOGRAPHY*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  background-color: #FAFAFA;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
