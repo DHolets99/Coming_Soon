@@ -63,9 +63,218 @@ $red: #F05B5B;
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+.button {
+    @include body2;
+    font-weight: bold;
+    padding: 14px 54px;
+    border-radius: 28px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.button_blue {
+    background-color: $blue;
+    color: #FFFFFF;
+}
+
+.button_blue:hover {
+    background-color: $light_blue;
+}
+
+.button_lgblue {
+    background-color: #E4EAFF;
+    color: $blue;
+}
+
+.button_lgblue:hover {
+    background-color: #D3DDFF;
+}
+
+.button_white {
+    background-color: #FFFFFF;
+    color: $blue;
+}
+
+.button_white:hover {
+    color: #829CFF;
+}
+
 .wrapper {
     max-width: 1110px;
     margin: 0 auto;
-    box-sizing: border-box;
     padding: 0 20px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    padding-top: 81px;
+    margin-bottom: 102px;
+
+    .wrapper {
+        position: relative;
+    }
+
+    .header__bg-pattern {
+        position: absolute;
+        top: -515px;
+        right: -500px;
+    }
+}
+
+.main {
+    position: relative;
+    margin-bottom: -255px;
+    z-index: 2;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: fit-content;
+        margin-bottom: 104px;
+    }
+
+    .content__information {
+        max-width: 540px;
+        height: fit-content;
+        margin-bottom: 70px;
+    }
+
+    .content__title {
+        @include h1;
+        color: $dark_gray;
+        margin-bottom: 24px;
+    }
+
+    .content__description {
+        @include body1;
+        color: $gray;
+        margin-bottom: 32px;
+    }
+
+    .content__button {
+        box-shadow: 0px 25px 25px -10px #3F5BC23F;
+    }
+
+    .tariff__cards {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .tariff__card {
+        max-width: 350px;
+        width: 100%;
+        border-radius: 13px;
+        padding: 40px 65px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .white-card {
+        background-color: #FFFFFF;
+        color: $gray;
+
+        .tariff__name, .tariff__price, .tariff__users {
+            color: $dark_gray;
+        }
+    }
+
+    .blue-card {
+        background-color: $blue;
+        color: #FFFFFF;
+    }
+
+    .tariff__name {
+        @include h2;
+        margin-bottom: 40px;
+    }
+
+    .tariff__price {
+        @include h1;
+        margin-bottom: 8px;
+    }
+
+    .tariff__users, .tariff__features {
+        @include body2;
+    }
+
+    .tariff__users {
+        margin-bottom: 56px;
+    }
+
+    .tariff__features {
+        text-align: center;
+        margin-bottom: 32px;
+        line-height: 38px;
+    }
+}
+
+.footer {
+    padding-bottom: 91px;
+    overflow-y: hidden;
+    position: relative;
+    background-color: $black;
+    padding-top: 335px;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+        z-index: 1;
+    } 
+
+    .timer__desc {
+        @include h3;
+        color: #FFFFFF;
+
+        span {
+            color: $blue;
+        }
+    }
+
+    .timer__cards {
+        display: flex;
+        column-gap: 16px;
+    }
+
+    .timer__card {
+        width: 100px;
+        height: 128px;
+        box-sizing: border-box;
+        background-color: $dark_gray;
+        border-radius: 13px;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: #999CA7;
+        text-transform: lowercase;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: 56px;
+            line-height: 48px;
+            color: #FFFFFF;
+        }
+    }
+
+    .footer__bg-pattern {
+        position: absolute;
+        right: -35px;
+        z-index: -1;
+    }
 }

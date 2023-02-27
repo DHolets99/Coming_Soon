@@ -6,9 +6,227 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
+.button {
+  font-family: Kumbh Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  font-weight: bold;
+  padding: 14px 54px;
+  border-radius: 28px;
+  border: none;
+  transition: all 0.3s;
+}
+
+.button_blue {
+  background-color: #5175FF;
+  color: #FFFFFF;
+}
+
+.button_blue:hover {
+  background-color: #829CFF;
+}
+
+.button_lgblue {
+  background-color: #E4EAFF;
+  color: #5175FF;
+}
+
+.button_lgblue:hover {
+  background-color: #D3DDFF;
+}
+
+.button_white {
+  background-color: #FFFFFF;
+  color: #5175FF;
+}
+
+.button_white:hover {
+  color: #829CFF;
+}
+
 .wrapper {
   max-width: 1110px;
   margin: 0 auto;
-  box-sizing: border-box;
   padding: 0 20px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  padding-top: 81px;
+  margin-bottom: 102px;
+}
+.header .wrapper {
+  position: relative;
+}
+.header .header__bg-pattern {
+  position: absolute;
+  top: -515px;
+  right: -500px;
+}
+
+.main {
+  position: relative;
+  margin-bottom: -255px;
+  z-index: 2;
+}
+.main .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  margin-bottom: 104px;
+}
+.main .content__information {
+  max-width: 540px;
+  height: fit-content;
+  margin-bottom: 70px;
+}
+.main .content__title {
+  font-family: Kumbh Sans;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #333950;
+  margin-bottom: 24px;
+}
+.main .content__description {
+  font-family: Kumbh Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #747B95;
+  margin-bottom: 32px;
+}
+.main .content__button {
+  box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.2470588235);
+}
+.main .tariff__cards {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+.main .tariff__card {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 13px;
+  padding: 40px 65px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .white-card {
+  background-color: #FFFFFF;
+  color: #747B95;
+}
+.main .white-card .tariff__name, .main .white-card .tariff__price, .main .white-card .tariff__users {
+  color: #333950;
+}
+.main .blue-card {
+  background-color: #5175FF;
+  color: #FFFFFF;
+}
+.main .tariff__name {
+  font-family: Kumbh Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.main .tariff__price {
+  font-family: Kumbh Sans;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.main .tariff__users, .main .tariff__features {
+  font-family: Kumbh Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.main .tariff__users {
+  margin-bottom: 56px;
+}
+.main .tariff__features {
+  text-align: center;
+  margin-bottom: 32px;
+  line-height: 38px;
+}
+
+.footer {
+  padding-bottom: 91px;
+  overflow-y: hidden;
+  position: relative;
+  background-color: #25293A;
+  padding-top: 335px;
+}
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.footer .timer__desc {
+  font-family: Kumbh Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #FFFFFF;
+}
+.footer .timer__desc span {
+  color: #5175FF;
+}
+.footer .timer__cards {
+  display: flex;
+  column-gap: 16px;
+}
+.footer .timer__card {
+  width: 100px;
+  height: 128px;
+  box-sizing: border-box;
+  background-color: #333950;
+  border-radius: 13px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #999CA7;
+  text-transform: lowercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .timer__card span {
+  font-size: 56px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+.footer .footer__bg-pattern {
+  position: absolute;
+  right: -35px;
+  z-index: -1;
 }
