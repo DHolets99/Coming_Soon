@@ -5,32 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/sing-up.css">
+  <link rel="stylesheet" href="./styles/timer.css">
+  <link rel="stylesheet" href="./styles/form.css">
 
     <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
 <body>
-  Work smarter. Save time.
-
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
-
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-
-  Name
-  Email Address
-  Basic Pack Free
+  <header class="header">
+    <div class="wrapper">
+      <img src="./assets/shared/logo.svg" alt="logo" class="header__logo">
+    </div>
+  </header>
+  <main class="main">
+    <div class="wrapper">
+      <section class="content">
+        <div class="content__information">
+          <h1 class="content__title">Work smarter. Save time.</h1>
+          <p class="content__description">Easily manage your projects. Get on the list and receive in-app perks available only to 
+            early subscribers. We are moving into final development and getting ready for official launch soon.</p>
+            <div class="timer">
+              <p class="timer__desc">Coming <span></span></p>
+              <div class="timer__cards">
+                <div class="timer__card card__days"><span></span> Days</div>
+                <div class="timer__card card__hours"><span></span> Hours</div>
+                <div class="timer__card card__min"><span></span> Min</div>
+                <div class="timer__card card__sec"><span></span> Sec</div>
+              </div>
+            </div>
+        </div>
+        <form action="" class="form">
+          <input type="text" class="name" placeholder="Name">
+          <input type="email" name="email" id="email" class="email" placeholder="Email Address">
+          <select name="" id=""></select>
+          <input type="tel" name="" id="" class="phone" placeholder="Phone Number">
+          <input type="text" name="" id="" class="company" placeholder="Company">
+          <button type="submit" class="button button_blue">Get on the list</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  
+  
+  
   Basic Pack Free
   Pro Pack $9.99
   Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
+  <script src="./js/index.js"></script>
 </body>
 </html>

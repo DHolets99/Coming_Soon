@@ -1,70 +1,7 @@
 /*COLORS*/
 /*TYPOGRAPHY*/
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-:root {
-  background-color: #FAFAFA;
-  font-family: "Kumbh Sans", sans-serif;
-}
-
-.button {
-  font-family: Kumbh Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0px;
-  text-align: left;
-  font-weight: bold;
-  padding: 14px 54px;
-  border-radius: 28px;
-  border: none;
-  transition: all 0.3s;
-}
-
-.button_blue {
-  background-color: #5175FF;
-  color: #FFFFFF;
-}
-
-.button_blue:hover {
-  background-color: #829CFF;
-}
-
-.button_lgblue {
-  background-color: #E4EAFF;
-  color: #5175FF;
-}
-
-.button_lgblue:hover {
-  background-color: #D3DDFF;
-}
-
-.button_white {
-  background-color: #FFFFFF;
-  color: #5175FF;
-}
-
-.button_white:hover {
-  color: #829CFF;
-}
-
-.wrapper {
-  max-width: 1110px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-.header {
-  padding-top: 81px;
-  margin-bottom: 102px;
-}
-.header .wrapper {
-  position: relative;
-}
-.header .header__bg-pattern {
+.header__bg-pattern {
   position: absolute;
   top: -515px;
   right: -500px;
@@ -109,6 +46,7 @@ body {
 }
 .main .content__button {
   box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.2470588235);
+  display: inline-block;
 }
 .main .tariff__cards {
   display: flex;
@@ -172,6 +110,9 @@ body {
   margin-bottom: 32px;
   line-height: 38px;
 }
+.main .tariff__button {
+  margin: auto 0 0 0;
+}
 
 .footer {
   padding-bottom: 91px;
@@ -186,44 +127,6 @@ body {
   align-items: center;
   position: relative;
   z-index: 1;
-}
-.footer .timer__desc {
-  font-family: Kumbh Sans;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 48px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  text-align: left;
-  color: #FFFFFF;
-}
-.footer .timer__desc span {
-  color: #5175FF;
-}
-.footer .timer__cards {
-  display: flex;
-  column-gap: 16px;
-}
-.footer .timer__card {
-  width: 100px;
-  height: 128px;
-  box-sizing: border-box;
-  background-color: #333950;
-  border-radius: 13px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 28px;
-  color: #999CA7;
-  text-transform: lowercase;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.footer .timer__card span {
-  font-size: 56px;
-  line-height: 48px;
-  color: #FFFFFF;
 }
 .footer .footer__bg-pattern {
   position: absolute;

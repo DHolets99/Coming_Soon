@@ -1,127 +1,9 @@
-/*COLORS*/
+@import "styles.scss";
 
-$white: #FAFAFA;
-$blue: #5175FF;
-$dark_gray: #333950;
-$gray: #747B95;
-$light_blue: #829CFF;
-$black: #25293A;
-$red: #F05B5B;
-
-/*TYPOGRAPHY*/
-
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
-
-@mixin h1 {
-    font-family: Kumbh Sans;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: 0px;
-    text-align: left;
-}
-
-@mixin h2 {
-    font-family: Kumbh Sans;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: 0px;
-    text-align: left;
-}
-
-@mixin h3 {
-    font-family: Kumbh Sans;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 48px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    text-align: left;
-}
-
-@mixin body1 {
-    font-family: Kumbh Sans;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0px;
-    text-align: left;
-}
-
-@mixin body2 {
-    font-family: Kumbh Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0px;
-    text-align: left;
-}
-
-:root {
-    background-color: $white;
-    font-family: 'Kumbh Sans', sans-serif;
-}
-
-.button {
-    @include body2;
-    font-weight: bold;
-    padding: 14px 54px;
-    border-radius: 28px;
-    border: none;
-    transition: all 0.3s;
-}
-
-.button_blue {
-    background-color: $blue;
-    color: #FFFFFF;
-}
-
-.button_blue:hover {
-    background-color: $light_blue;
-}
-
-.button_lgblue {
-    background-color: #E4EAFF;
-    color: $blue;
-}
-
-.button_lgblue:hover {
-    background-color: #D3DDFF;
-}
-
-.button_white {
-    background-color: #FFFFFF;
-    color: $blue;
-}
-
-.button_white:hover {
-    color: #829CFF;
-}
-
-.wrapper {
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-.header {
-    padding-top: 81px;
-    margin-bottom: 102px;
-
-    .wrapper {
-        position: relative;
-    }
-
-    .header__bg-pattern {
-        position: absolute;
-        top: -515px;
-        right: -500px;
-    }
+.header__bg-pattern {
+    position: absolute;
+    top: -515px;
+    right: -500px;
 }
 
 .main {
@@ -157,6 +39,7 @@ body {
 
     .content__button {
         box-shadow: 0px 25px 25px -10px #3F5BC23F;
+        display: inline-block;
     }
 
     .tariff__cards {
@@ -215,6 +98,10 @@ body {
         margin-bottom: 32px;
         line-height: 38px;
     }
+
+    .tariff__button {
+        margin: auto 0 0 0;
+    }
 }
 
 .footer {
@@ -232,45 +119,6 @@ body {
         position: relative;
         z-index: 1;
     } 
-
-    .timer__desc {
-        @include h3;
-        color: #FFFFFF;
-
-        span {
-            color: $blue;
-        }
-    }
-
-    .timer__cards {
-        display: flex;
-        column-gap: 16px;
-    }
-
-    .timer__card {
-        width: 100px;
-        height: 128px;
-        box-sizing: border-box;
-        background-color: $dark_gray;
-        border-radius: 13px;
-
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 28px;
-        color: #999CA7;
-        text-transform: lowercase;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        span {
-            font-size: 56px;
-            line-height: 48px;
-            color: #FFFFFF;
-        }
-    }
 
     .footer__bg-pattern {
         position: absolute;

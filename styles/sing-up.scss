@@ -1,0 +1,41 @@
+@import "styles.scss";
+
+.main {
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: fit-content;
+        margin-bottom: 104px;
+    }
+
+    .content__information {
+        max-width: 540px;
+        height: fit-content;
+        margin-bottom: 70px;
+    }
+
+    .content__title {
+        @include h1;
+        color: $dark_gray;
+        margin-bottom: 24px;
+    }
+
+    .content__description {
+        @include body1;
+        color: $gray;
+        margin-bottom: 40px;
+    }
+
+    .timer__desc {
+        color: $dark_gray;
+    }
+
+    .timer__card {
+        background-color: #EEF1FF;
+
+        span {
+            color: $blue;
+        }
+    }
+}

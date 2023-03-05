@@ -1,0 +1,43 @@
+/*COLORS*/
+/*TYPOGRAPHY*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.timer__desc {
+  color: #FFFFFF;
+  font-family: Kumbh Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.timer__desc span {
+  color: #5175FF;
+}
+
+.timer__cards {
+  display: flex;
+  column-gap: 16px;
+}
+
+.timer__card {
+  width: 100px;
+  height: 128px;
+  box-sizing: border-box;
+  background-color: #333950;
+  border-radius: 13px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #999CA7;
+  text-transform: lowercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timer__card span {
+  font-size: 56px;
+  line-height: 48px;
+  color: #FFFFFF;
+}

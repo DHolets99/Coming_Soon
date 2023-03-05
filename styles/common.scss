@@ -1,0 +1,64 @@
+@import "styles.scss";
+
+:root {
+    background-color: $white;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.button {
+    @include body2;
+    font-weight: bold;
+    padding: 14px 54px;
+    border-radius: 28px;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.button_blue {
+    background-color: $blue;
+    color: #FFFFFF;
+}
+
+.button_blue:hover {
+    background-color: $light_blue;
+}
+
+.button_lgblue {
+    background-color: #E4EAFF;
+    color: $blue;
+}
+
+.button_lgblue:hover {
+    background-color: #D3DDFF;
+}
+
+.button_white {
+    background-color: #FFFFFF;
+    color: $blue;
+}
+
+.button_white:hover {
+    color: #829CFF;
+}
+
+.wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    padding-top: 81px;
+    margin-bottom: 102px;
+
+    .wrapper {
+        position: relative;
+    }
+}
+
+

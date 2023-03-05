@@ -1,0 +1,67 @@
+/*COLORS*/
+/*TYPOGRAPHY*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  background-color: #FAFAFA;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.button {
+  font-family: Kumbh Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+  font-weight: bold;
+  padding: 14px 54px;
+  border-radius: 28px;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.button_blue {
+  background-color: #5175FF;
+  color: #FFFFFF;
+}
+
+.button_blue:hover {
+  background-color: #829CFF;
+}
+
+.button_lgblue {
+  background-color: #E4EAFF;
+  color: #5175FF;
+}
+
+.button_lgblue:hover {
+  background-color: #D3DDFF;
+}
+
+.button_white {
+  background-color: #FFFFFF;
+  color: #5175FF;
+}
+
+.button_white:hover {
+  color: #829CFF;
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  padding-top: 81px;
+  margin-bottom: 102px;
+}
+.header .wrapper {
+  position: relative;
+}

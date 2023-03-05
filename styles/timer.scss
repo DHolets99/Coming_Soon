@@ -1,0 +1,40 @@
+@import "styles.scss";
+
+.timer__desc {
+    color: #FFFFFF;
+    @include h3;
+
+    span {
+       color: $blue;
+    }
+}
+
+.timer__cards {
+    display: flex;
+    column-gap: 16px;
+}
+
+.timer__card {
+    width: 100px;
+    height: 128px;
+    box-sizing: border-box;
+    background-color: $dark_gray;
+    border-radius: 13px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #999CA7;
+    text-transform: lowercase;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-size: 56px;
+        line-height: 48px;
+        color: #FFFFFF;
+    }
+}
